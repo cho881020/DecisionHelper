@@ -51,5 +51,10 @@
     <color name="todoColor">#EF846C</color>
     <color name="doingColor">#F7D14E</color>
     <color name="doneColor">#50D4C1</color>
+
+
+    <!--텍스트 컬러를 정해보자-->
+    <color name="decision_title_text_color">#808080</color>
+    <color name="decision_info_text_color">#A0A0A0</color>
 ㄴ
 </resources>
