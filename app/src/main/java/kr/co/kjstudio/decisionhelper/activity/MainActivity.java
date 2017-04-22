@@ -16,6 +16,7 @@ import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 
 import kr.co.kjstudio.decisionhelper.R;
+import kr.co.kjstudio.decisionhelper.fragment.DecisionHelpListFrag;
 
 
 public class MainActivity extends BaseActivity {
@@ -76,13 +77,13 @@ public class MainActivity extends BaseActivity {
 
         toggleBtn.setVisibility(View.VISIBLE);
 
-//        FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
-//                getSupportFragmentManager(), FragmentPagerItems.with(this)
-//                .add(R.string.product_list, ProductListFrag.class)
+        FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
+                getSupportFragmentManager(), FragmentPagerItems.with(this)
+                .add(R.string.today_decision, DecisionHelpListFrag.class)
 //                .add(R.string.my_orders, MyOrderListFrag.class)
 //                .add(R.string.setting, SettingsFrag.class)
-//                .create());
-//        myViewPager.setAdapter(adapter);
+                .create());
+        myViewPager.setAdapter(adapter);
         myViewPager.setOffscreenPageLimit(3);
 
         viewpagertab.setViewPager(myViewPager);
